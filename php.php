@@ -5,7 +5,10 @@
     $method = $_SERVER["REQUEST_MEHTHOD"];
 
     if ($method == "GET"){
-        $response = "hi";
+        $response = [
+                "message" => "mission success",
+                "success" => true
+            ];
         }else{
             http_response_code(405); // Method Not Allowed
             $response = [
