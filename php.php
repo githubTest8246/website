@@ -1,12 +1,11 @@
+
+
 <?php
     header("Content-Type: application/json"); 
     $method = $_SERVER["REQUEST_MEHTHOD"];
 
     if ($method == "GET"){
-        $response = [
-            "message" => "mission retireved",
-            "success" => true
-            ]
+        $response = "hi";
         }else{
             http_response_code(405); // Method Not Allowed
             $response = [
